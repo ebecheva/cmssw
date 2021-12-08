@@ -106,11 +106,11 @@ process.hgcalValidationTPG_step = cms.Path(process.runHGCALValidationTPG)
 #process.dqmSaver.workflow = '/validation/' + 'HGCAL' + '/TPG'
 #process.dqmsave_step = cms.Path(process.dqmSaver)
 
-# NEW added
+# NEW added test14
 process.onlineSaver = cms.EDAnalyzer("DQMFileSaverOnline",
     producer = cms.untracked.string('DQM'),
     path = cms.untracked.string('./'),
-    tag = cms.untracked.string('new2'),
+    tag = cms.untracked.string('validation_HGCAL_TPG')
 )
 
 process.o = cms.EndPath(process.onlineSaver)
