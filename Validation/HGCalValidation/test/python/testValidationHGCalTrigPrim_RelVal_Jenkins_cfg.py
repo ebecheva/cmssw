@@ -101,7 +101,7 @@ process.hgcalValidationTPG_step = cms.Path(process.runHGCALValidationTPG)
 #process.dqmsave_step = cms.Path(process.dqmSaver)
 
 # NEW added
-# Add this comment for testing Jenkins job, mlti configuration
+# Add this comment for testing Jenkins job, multiconfig, integration into main job
 process.onlineSaver = cms.EDAnalyzer("DQMFileSaverOnline",
     producer = cms.untracked.string('DQM'),
     path = cms.untracked.string('./'),
