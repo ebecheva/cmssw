@@ -305,7 +305,7 @@ void HGCalTriggerValidator::dqmAnalyze(edm::Event const &iEvent,
       histograms.h_tower_iPhi_->Fill(tower_itr->id().iPhi());
     }
   }
-  histograms.h_tower_n_->Fill(tower_n);
+  histograms.h_tower_n_->Fill(tower_n)
 }
 
 #include "FWCore/Framework/interface/MakerMacros.h"
