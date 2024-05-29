@@ -6,7 +6,7 @@
 #include "FWCore/Framework/interface/MakerMacros.h"
 #include "FWCore/Utilities/interface/ESGetToken.h"
 #include "DataFormats/HGCDigi/interface/HGCDigiCollections.h"
-#include "DataFormats/L1THGCal/interface/HGCalTriggerCell.h"
+//#include "DataFormats/L1THGCal/interface/HGCalTriggerCell.h"
 
 #include "Geometry/Records/interface/CaloGeometryRecord.h"
 #include "L1Trigger/L1THGCal/interface/HGCalTriggerGeometryBase.h"
@@ -15,13 +15,13 @@
 
 #include <memory>
 
-class HGCalVFEProducer : public edm::stream::EDProducer<> {
+class HGCalVFEProducer : public edm::stream::EDProducer<> //{
 public:
   HGCalVFEProducer(const edm::ParameterSet&);
   ~HGCalVFEProducer() override {}
 
   void beginRun(const edm::Run&, const edm::EventSetup&) override;
-  void produce(edm::Event&, const edm::EventSetup&) override;
+  void produce(edm::Event&, const edm::EventSetup&) override//;
 
 private:
   // inputs
